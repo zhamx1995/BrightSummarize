@@ -14,7 +14,7 @@ Setup:
 Screenshots:
 
 Main page
-![alt tag](https://cloud.githubusercontent.com/assets/8942049/13948838/c3c3a058-eff8-11e5-8809-fb234f89a6c9.png =100x20)
+![](./BS-screenshots/BrightSummarize5smain.png =100x20)
 
 
 
