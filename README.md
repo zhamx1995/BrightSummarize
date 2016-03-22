@@ -15,9 +15,11 @@ Screenshots:
 
 Main page
 
-<!--![](./BS-screenshots/BrightSummarize5smain.png =100x20)-->
+<!--![alt tag](https://cloud.githubusercontent.com/assets/8942049/13948838/c3c3a058-eff8-11e5-8809-fb234f89a6c9.png =100x20)-->
 
-![minipic](BrightSummarize5smain.png)
+<p align="center">
+<img src="https://cloud.githubusercontent.com/assets/8942049/13948838/c3c3a058-eff8-11e5-8809-fb234f89a6c9.png" width="200"/>
+</p>
 
 
 Thanks to https://market.mashape.com/textanalysis/text-summarization
