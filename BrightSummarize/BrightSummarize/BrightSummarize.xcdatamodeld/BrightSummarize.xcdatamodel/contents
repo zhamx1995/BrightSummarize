@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Savedsummary" syncable="YES">
+        <attribute name="dateAdded" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sentenceNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summaryText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlSource" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Savedsummary" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

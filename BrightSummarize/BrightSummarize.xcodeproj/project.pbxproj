@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C54044A1C9FB0A200A4DABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5404491C9FB0A200A4DABE /* AppDelegate.swift */; };
+		7C5404521C9FB0A200A4DABE /* BrightSummarize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C5404501C9FB0A200A4DABE /* BrightSummarize.xcdatamodeld */; };
+		7C5404541C9FB0A200A4DABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5404531C9FB0A200A4DABE /* Assets.xcassets */; };
+		7C5404571C9FB0A200A4DABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5404551C9FB0A200A4DABE /* LaunchScreen.storyboard */; };
+		7C5404621C9FB0A200A4DABE /* BrightSummarizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5404611C9FB0A200A4DABE /* BrightSummarizeTests.swift */; };
+		7C54046D1C9FB0A200A4DABE /* BrightSummarizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54046C1C9FB0A200A4DABE /* BrightSummarizeUITests.swift */; };
+		7C54047F1C9FB0EE00A4DABE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54047E1C9FB0EE00A4DABE /* TableViewController.swift */; };
+		7C5404811C9FB0FB00A4DABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5404801C9FB0FB00A4DABE /* Main.storyboard */; };
+		7C5407811C9FC08B00A4DABE /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407631C9FC08B00A4DABE /* Base64.m */; };
+		7C5407821C9FC08B00A4DABE /* UNIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407661C9FC08B00A4DABE /* UNIBaseRequest.m */; };
+		7C5407831C9FC08B00A4DABE /* UNIBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407681C9FC08B00A4DABE /* UNIBodyRequest.m */; };
+		7C5407841C9FC08B00A4DABE /* UNISimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54076A1C9FC08B00A4DABE /* UNISimpleRequest.m */; };
+		7C5407851C9FC08B00A4DABE /* UNIHTTPBinaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54076D1C9FC08B00A4DABE /* UNIHTTPBinaryResponse.m */; };
+		7C5407861C9FC08B00A4DABE /* UNIHTTPJsonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54076F1C9FC08B00A4DABE /* UNIHTTPJsonResponse.m */; };
+		7C5407871C9FC08B00A4DABE /* UNIHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407711C9FC08B00A4DABE /* UNIHTTPResponse.m */; };
+		7C5407881C9FC08B00A4DABE /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407731C9FC08B00A4DABE /* UNIHTTPStringResponse.m */; };
+		7C5407891C9FC08B00A4DABE /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407751C9FC08B00A4DABE /* UNIJsonNode.m */; };
+		7C54078A1C9FC08B00A4DABE /* UNIHTTPClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407771C9FC08B00A4DABE /* UNIHTTPClientHelper.m */; };
+		7C54078B1C9FC08B00A4DABE /* UNIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407791C9FC08B00A4DABE /* UNIHTTPRequest.m */; };
+		7C54078C1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54077B1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.m */; };
+		7C54078D1C9FC08B00A4DABE /* UNIRest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54077E1C9FC08B00A4DABE /* UNIRest.m */; };
+		7C54078E1C9FC08B00A4DABE /* UNIUrlConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407801C9FC08B00A4DABE /* UNIUrlConnection.m */; };
+		7C5407901CA0699900A4DABE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54078F1CA0699900A4DABE /* Reachability.swift */; };
+		7C5407941CA0A08400A4DABE /* BookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407931CA0A08400A4DABE /* BookmarkTableViewController.swift */; };
+		7C5407961CA0A0DB00A4DABE /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407951CA0A0DB00A4DABE /* BookmarkTableViewCell.swift */; };
+		7C5407981CA1261900A4DABE /* BookmarkDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5407971CA1261900A4DABE /* BookmarkDetailTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C54045E1C9FB0A200A4DABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C54043E1C9FB0A200A4DABE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5404451C9FB0A200A4DABE;
+			remoteInfo = BrightSummarize;
+		};
+		7C5404691C9FB0A200A4DABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C54043E1C9FB0A200A4DABE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5404451C9FB0A200A4DABE;
+			remoteInfo = BrightSummarize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C5404461C9FB0A200A4DABE /* BrightSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5404491C9FB0A200A4DABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C5404511C9FB0A200A4DABE /* BrightSummarize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrightSummarize.xcdatamodel; sourceTree = "<group>"; };
+		7C5404531C9FB0A200A4DABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C5404561C9FB0A200A4DABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C5404581C9FB0A200A4DABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C54045D1C9FB0A200A4DABE /* BrightSummarizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightSummarizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5404611C9FB0A200A4DABE /* BrightSummarizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightSummarizeTests.swift; sourceTree = "<group>"; };
+		7C5404631C9FB0A200A4DABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5404681C9FB0A200A4DABE /* BrightSummarizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightSummarizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C54046C1C9FB0A200A4DABE /* BrightSummarizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightSummarizeUITests.swift; sourceTree = "<group>"; };
+		7C54046E1C9FB0A200A4DABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C54047E1C9FB0EE00A4DABE /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7C5404801C9FB0FB00A4DABE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7C54058E1C9FB97300A4DABE /* BrightSummarize-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrightSummarize-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C5407621C9FC08B00A4DABE /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		7C5407631C9FC08B00A4DABE /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		7C5407651C9FC08B00A4DABE /* UNIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBaseRequest.h; sourceTree = "<group>"; };
+		7C5407661C9FC08B00A4DABE /* UNIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBaseRequest.m; sourceTree = "<group>"; };
+		7C5407671C9FC08B00A4DABE /* UNIBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBodyRequest.h; sourceTree = "<group>"; };
+		7C5407681C9FC08B00A4DABE /* UNIBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBodyRequest.m; sourceTree = "<group>"; };
+		7C5407691C9FC08B00A4DABE /* UNISimpleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNISimpleRequest.h; sourceTree = "<group>"; };
+		7C54076A1C9FC08B00A4DABE /* UNISimpleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNISimpleRequest.m; sourceTree = "<group>"; };
+		7C54076C1C9FC08B00A4DABE /* UNIHTTPBinaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPBinaryResponse.h; sourceTree = "<group>"; };
+		7C54076D1C9FC08B00A4DABE /* UNIHTTPBinaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPBinaryResponse.m; sourceTree = "<group>"; };
+		7C54076E1C9FC08B00A4DABE /* UNIHTTPJsonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPJsonResponse.h; sourceTree = "<group>"; };
+		7C54076F1C9FC08B00A4DABE /* UNIHTTPJsonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPJsonResponse.m; sourceTree = "<group>"; };
+		7C5407701C9FC08B00A4DABE /* UNIHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPResponse.h; sourceTree = "<group>"; };
+		7C5407711C9FC08B00A4DABE /* UNIHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPResponse.m; sourceTree = "<group>"; };
+		7C5407721C9FC08B00A4DABE /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPStringResponse.h; sourceTree = "<group>"; };
+		7C5407731C9FC08B00A4DABE /* UNIHTTPStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPStringResponse.m; sourceTree = "<group>"; };
+		7C5407741C9FC08B00A4DABE /* UNIJsonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIJsonNode.h; sourceTree = "<group>"; };
+		7C5407751C9FC08B00A4DABE /* UNIJsonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIJsonNode.m; sourceTree = "<group>"; };
+		7C5407761C9FC08B00A4DABE /* UNIHTTPClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPClientHelper.h; sourceTree = "<group>"; };
+		7C5407771C9FC08B00A4DABE /* UNIHTTPClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPClientHelper.m; sourceTree = "<group>"; };
+		7C5407781C9FC08B00A4DABE /* UNIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequest.h; sourceTree = "<group>"; };
+		7C5407791C9FC08B00A4DABE /* UNIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequest.m; sourceTree = "<group>"; };
+		7C54077A1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequestWithBody.h; sourceTree = "<group>"; };
+		7C54077B1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequestWithBody.m; sourceTree = "<group>"; };
+		7C54077C1C9FC08B00A4DABE /* Unirest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Unirest-Prefix.pch"; sourceTree = "<group>"; };
+		7C54077D1C9FC08B00A4DABE /* UNIRest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIRest.h; sourceTree = "<group>"; };
+		7C54077E1C9FC08B00A4DABE /* UNIRest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIRest.m; sourceTree = "<group>"; };
+		7C54077F1C9FC08B00A4DABE /* UNIUrlConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIUrlConnection.h; sourceTree = "<group>"; };
+		7C5407801C9FC08B00A4DABE /* UNIUrlConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIUrlConnection.m; sourceTree = "<group>"; };
+		7C54078F1CA0699900A4DABE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7C5407931CA0A08400A4DABE /* BookmarkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewController.swift; sourceTree = "<group>"; };
+		7C5407951CA0A0DB00A4DABE /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		7C5407971CA1261900A4DABE /* BookmarkDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkDetailTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C5404431C9FB0A200A4DABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C54045A1C9FB0A200A4DABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5404651C9FB0A200A4DABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C54043D1C9FB0A200A4DABE = {
+			isa = PBXGroup;
+			children = (
+				7C5404481C9FB0A200A4DABE /* BrightSummarize */,
+				7C5404601C9FB0A200A4DABE /* BrightSummarizeTests */,
+				7C54046B1C9FB0A200A4DABE /* BrightSummarizeUITests */,
+				7C5404471C9FB0A200A4DABE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C5404471C9FB0A200A4DABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C5404461C9FB0A200A4DABE /* BrightSummarize.app */,
+				7C54045D1C9FB0A200A4DABE /* BrightSummarizeTests.xctest */,
+				7C5404681C9FB0A200A4DABE /* BrightSummarizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C5404481C9FB0A200A4DABE /* BrightSummarize */ = {
+			isa = PBXGroup;
+			children = (
+				7C5404801C9FB0FB00A4DABE /* Main.storyboard */,
+				7C5404491C9FB0A200A4DABE /* AppDelegate.swift */,
+				7C54047E1C9FB0EE00A4DABE /* TableViewController.swift */,
+				7C5407931CA0A08400A4DABE /* BookmarkTableViewController.swift */,
+				7C5407951CA0A0DB00A4DABE /* BookmarkTableViewCell.swift */,
+				7C5407971CA1261900A4DABE /* BookmarkDetailTableViewController.swift */,
+				7C54078F1CA0699900A4DABE /* Reachability.swift */,
+				7C5407611C9FC08B00A4DABE /* Unirest */,
+				7C5404531C9FB0A200A4DABE /* Assets.xcassets */,
+				7C5404551C9FB0A200A4DABE /* LaunchScreen.storyboard */,
+				7C5404581C9FB0A200A4DABE /* Info.plist */,
+				7C5404501C9FB0A200A4DABE /* BrightSummarize.xcdatamodeld */,
+				7C54058E1C9FB97300A4DABE /* BrightSummarize-Bridging-Header.h */,
+			);
+			path = BrightSummarize;
+			sourceTree = "<group>";
+		};
+		7C5404601C9FB0A200A4DABE /* BrightSummarizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C5404611C9FB0A200A4DABE /* BrightSummarizeTests.swift */,
+				7C5404631C9FB0A200A4DABE /* Info.plist */,
+			);
+			path = BrightSummarizeTests;
+			sourceTree = "<group>";
+		};
+		7C54046B1C9FB0A200A4DABE /* BrightSummarizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C54046C1C9FB0A200A4DABE /* BrightSummarizeUITests.swift */,
+				7C54046E1C9FB0A200A4DABE /* Info.plist */,
+			);
+			path = BrightSummarizeUITests;
+			sourceTree = "<group>";
+		};
+		7C5407611C9FC08B00A4DABE /* Unirest */ = {
+			isa = PBXGroup;
+			children = (
+				7C5407621C9FC08B00A4DABE /* Base64.h */,
+				7C5407631C9FC08B00A4DABE /* Base64.m */,
+				7C5407641C9FC08B00A4DABE /* HttpRequest */,
+				7C54076B1C9FC08B00A4DABE /* HttpResponse */,
+				7C5407761C9FC08B00A4DABE /* UNIHTTPClientHelper.h */,
+				7C5407771C9FC08B00A4DABE /* UNIHTTPClientHelper.m */,
+				7C5407781C9FC08B00A4DABE /* UNIHTTPRequest.h */,
+				7C5407791C9FC08B00A4DABE /* UNIHTTPRequest.m */,
+				7C54077A1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.h */,
+				7C54077B1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.m */,
+				7C54077C1C9FC08B00A4DABE /* Unirest-Prefix.pch */,
+				7C54077D1C9FC08B00A4DABE /* UNIRest.h */,
+				7C54077E1C9FC08B00A4DABE /* UNIRest.m */,
+				7C54077F1C9FC08B00A4DABE /* UNIUrlConnection.h */,
+				7C5407801C9FC08B00A4DABE /* UNIUrlConnection.m */,
+			);
+			path = Unirest;
+			sourceTree = "<group>";
+		};
+		7C5407641C9FC08B00A4DABE /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7C5407651C9FC08B00A4DABE /* UNIBaseRequest.h */,
+				7C5407661C9FC08B00A4DABE /* UNIBaseRequest.m */,
+				7C5407671C9FC08B00A4DABE /* UNIBodyRequest.h */,
+				7C5407681C9FC08B00A4DABE /* UNIBodyRequest.m */,
+				7C5407691C9FC08B00A4DABE /* UNISimpleRequest.h */,
+				7C54076A1C9FC08B00A4DABE /* UNISimpleRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		7C54076B1C9FC08B00A4DABE /* HttpResponse */ = {
+			isa = PBXGroup;
+			children = (
+				7C54076C1C9FC08B00A4DABE /* UNIHTTPBinaryResponse.h */,
+				7C54076D1C9FC08B00A4DABE /* UNIHTTPBinaryResponse.m */,
+				7C54076E1C9FC08B00A4DABE /* UNIHTTPJsonResponse.h */,
+				7C54076F1C9FC08B00A4DABE /* UNIHTTPJsonResponse.m */,
+				7C5407701C9FC08B00A4DABE /* UNIHTTPResponse.h */,
+				7C5407711C9FC08B00A4DABE /* UNIHTTPResponse.m */,
+				7C5407721C9FC08B00A4DABE /* UNIHTTPStringResponse.h */,
+				7C5407731C9FC08B00A4DABE /* UNIHTTPStringResponse.m */,
+				7C5407741C9FC08B00A4DABE /* UNIJsonNode.h */,
+				7C5407751C9FC08B00A4DABE /* UNIJsonNode.m */,
+			);
+			path = HttpResponse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C5404451C9FB0A200A4DABE /* BrightSummarize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5404711C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarize" */;
+			buildPhases = (
+				7C5404421C9FB0A200A4DABE /* Sources */,
+				7C5404431C9FB0A200A4DABE /* Frameworks */,
+				7C5404441C9FB0A200A4DABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrightSummarize;
+			productName = BrightSummarize;
+			productReference = 7C5404461C9FB0A200A4DABE /* BrightSummarize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C54045C1C9FB0A200A4DABE /* BrightSummarizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5404741C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarizeTests" */;
+			buildPhases = (
+				7C5404591C9FB0A200A4DABE /* Sources */,
+				7C54045A1C9FB0A200A4DABE /* Frameworks */,
+				7C54045B1C9FB0A200A4DABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C54045F1C9FB0A200A4DABE /* PBXTargetDependency */,
+			);
+			name = BrightSummarizeTests;
+			productName = BrightSummarizeTests;
+			productReference = 7C54045D1C9FB0A200A4DABE /* BrightSummarizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C5404671C9FB0A200A4DABE /* BrightSummarizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5404771C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarizeUITests" */;
+			buildPhases = (
+				7C5404641C9FB0A200A4DABE /* Sources */,
+				7C5404651C9FB0A200A4DABE /* Frameworks */,
+				7C5404661C9FB0A200A4DABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C54046A1C9FB0A200A4DABE /* PBXTargetDependency */,
+			);
+			name = BrightSummarizeUITests;
+			productName = BrightSummarizeUITests;
+			productReference = 7C5404681C9FB0A200A4DABE /* BrightSummarizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C54043E1C9FB0A200A4DABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mingxuan Zha";
+				TargetAttributes = {
+					7C5404451C9FB0A200A4DABE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					7C54045C1C9FB0A200A4DABE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7C5404451C9FB0A200A4DABE;
+					};
+					7C5404671C9FB0A200A4DABE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7C5404451C9FB0A200A4DABE;
+					};
+				};
+			};
+			buildConfigurationList = 7C5404411C9FB0A200A4DABE /* Build configuration list for PBXProject "BrightSummarize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C54043D1C9FB0A200A4DABE;
+			productRefGroup = 7C5404471C9FB0A200A4DABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C5404451C9FB0A200A4DABE /* BrightSummarize */,
+				7C54045C1C9FB0A200A4DABE /* BrightSummarizeTests */,
+				7C5404671C9FB0A200A4DABE /* BrightSummarizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C5404441C9FB0A200A4DABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5404811C9FB0FB00A4DABE /* Main.storyboard in Resources */,
+				7C5404571C9FB0A200A4DABE /* LaunchScreen.storyboard in Resources */,
+				7C5404541C9FB0A200A4DABE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C54045B1C9FB0A200A4DABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5404661C9FB0A200A4DABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C5404421C9FB0A200A4DABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C54078E1C9FC08B00A4DABE /* UNIUrlConnection.m in Sources */,
+				7C54078B1C9FC08B00A4DABE /* UNIHTTPRequest.m in Sources */,
+				7C5404521C9FB0A200A4DABE /* BrightSummarize.xcdatamodeld in Sources */,
+				7C54078D1C9FC08B00A4DABE /* UNIRest.m in Sources */,
+				7C54078A1C9FC08B00A4DABE /* UNIHTTPClientHelper.m in Sources */,
+				7C54044A1C9FB0A200A4DABE /* AppDelegate.swift in Sources */,
+				7C54078C1C9FC08B00A4DABE /* UNIHTTPRequestWithBody.m in Sources */,
+				7C5407821C9FC08B00A4DABE /* UNIBaseRequest.m in Sources */,
+				7C5407941CA0A08400A4DABE /* BookmarkTableViewController.swift in Sources */,
+				7C5407891C9FC08B00A4DABE /* UNIJsonNode.m in Sources */,
+				7C54047F1C9FB0EE00A4DABE /* TableViewController.swift in Sources */,
+				7C5407981CA1261900A4DABE /* BookmarkDetailTableViewController.swift in Sources */,
+				7C5407811C9FC08B00A4DABE /* Base64.m in Sources */,
+				7C5407841C9FC08B00A4DABE /* UNISimpleRequest.m in Sources */,
+				7C5407831C9FC08B00A4DABE /* UNIBodyRequest.m in Sources */,
+				7C5407851C9FC08B00A4DABE /* UNIHTTPBinaryResponse.m in Sources */,
+				7C5407901CA0699900A4DABE /* Reachability.swift in Sources */,
+				7C5407861C9FC08B00A4DABE /* UNIHTTPJsonResponse.m in Sources */,
+				7C5407871C9FC08B00A4DABE /* UNIHTTPResponse.m in Sources */,
+				7C5407881C9FC08B00A4DABE /* UNIHTTPStringResponse.m in Sources */,
+				7C5407961CA0A0DB00A4DABE /* BookmarkTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5404591C9FB0A200A4DABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5404621C9FB0A200A4DABE /* BrightSummarizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5404641C9FB0A200A4DABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C54046D1C9FB0A200A4DABE /* BrightSummarizeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C54045F1C9FB0A200A4DABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C5404451C9FB0A200A4DABE /* BrightSummarize */;
+			targetProxy = 7C54045E1C9FB0A200A4DABE /* PBXContainerItemProxy */;
+		};
+		7C54046A1C9FB0A200A4DABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C5404451C9FB0A200A4DABE /* BrightSummarize */;
+			targetProxy = 7C5404691C9FB0A200A4DABE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C5404551C9FB0A200A4DABE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C5404561C9FB0A200A4DABE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C54046F1C9FB0A200A4DABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C5404701C9FB0A200A4DABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C5404721C9FB0A200A4DABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BrightSummarize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightSummarize/BrightSummarize-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "BrightSummarize-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C5404731C9FB0A200A4DABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BrightSummarize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightSummarize/BrightSummarize-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "BrightSummarize-Swift.h";
+			};
+			name = Release;
+		};
+		7C5404751C9FB0A200A4DABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BrightSummarizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightSummarize.app/BrightSummarize";
+			};
+			name = Debug;
+		};
+		7C5404761C9FB0A200A4DABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BrightSummarizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightSummarize.app/BrightSummarize";
+			};
+			name = Release;
+		};
+		7C5404781C9FB0A200A4DABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BrightSummarizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BrightSummarize;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7C5404791C9FB0A200A4DABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BrightSummarizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmx.BrightSummarizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BrightSummarize;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C5404411C9FB0A200A4DABE /* Build configuration list for PBXProject "BrightSummarize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C54046F1C9FB0A200A4DABE /* Debug */,
+				7C5404701C9FB0A200A4DABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5404711C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5404721C9FB0A200A4DABE /* Debug */,
+				7C5404731C9FB0A200A4DABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5404741C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5404751C9FB0A200A4DABE /* Debug */,
+				7C5404761C9FB0A200A4DABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5404771C9FB0A200A4DABE /* Build configuration list for PBXNativeTarget "BrightSummarizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5404781C9FB0A200A4DABE /* Debug */,
+				7C5404791C9FB0A200A4DABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C5404501C9FB0A200A4DABE /* BrightSummarize.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C5404511C9FB0A200A4DABE /* BrightSummarize.xcdatamodel */,
+			);
+			currentVersion = 7C5404511C9FB0A200A4DABE /* BrightSummarize.xcdatamodel */;
+			path = BrightSummarize.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7C54043E1C9FB0A200A4DABE /* Project object */;
+}
