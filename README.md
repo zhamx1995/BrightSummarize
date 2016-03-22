@@ -14,8 +14,10 @@ Setup:
 Screenshots:
 
 Main page
-![](./BS-screenshots/BrightSummarize5smain.png =100x20)
 
+<!--![](./BS-screenshots/BrightSummarize5smain.png =100x20)-->
+
+![minipic](BrightSummarize5smain.png)
 
 
 Thanks to https://market.mashape.com/textanalysis/text-summarization
