@@ -14,5 +14,5 @@ Setup:
 Screenshots:
 
 
-
+Thanks to https://market.mashape.com/textanalysis/text-summarization
 Except the API service from Mashape, Copyright © 2016 Bright(Mingxuan) Zha. All rights reserved.
